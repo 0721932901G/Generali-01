@@ -4,7 +4,7 @@ const crypto = require('crypto');
 const os = require('os');
 
 // Session management
-function generateSessionId(prefix = 'KnightBot') {
+function generateSessionId(prefix = 'Generali) {
     const timestamp = Date.now();
     const random = crypto.randomBytes(4).toString('hex');
     return `${prefix}-${random}-${timestamp}`;
@@ -13,7 +13,7 @@ function generateSessionId(prefix = 'KnightBot') {
 // Get the proper temp directory path
 const getTempDir = () => {
     if (process.env.NODE_ENV === 'production') {
-        const tempDir = '/tmp/knightbot';
+        const tempDir = '/tmp/Generali;
         if (!fs.existsSync(tempDir)) {
             fs.mkdirSync(tempDir, { recursive: true });
         }
