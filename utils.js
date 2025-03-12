@@ -19,7 +19,7 @@ const getTempDir = () => {
         }
         return tempDir;
     }
-    return path.join(os.tmpdir(), 'knightbot');
+    return path.join(os.tmpdir(), 'Generali);
 };
 
 // Get session file path
